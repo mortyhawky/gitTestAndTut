@@ -22,3 +22,19 @@ Settings → SSH keys → New key
 
 ls ~/.ssh
 
+
+If repo does not exist on github:
+
+gh auth login
+
+gh repo create gitTestAndTut --public --source=. --remote=origin --push
+
+ssh -T git@github.com
+
+git push -u origin main
+
+git remote -v
+
+git push -u origin main
+
+
